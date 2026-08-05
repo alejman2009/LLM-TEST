@@ -1,0 +1,44 @@
+MODELOS USADOS:
+llama3:
+https://ollama.com/library/llama3
+
+llama2:
+https://ollama.com/library/llama2
+
+llama2-Uncensored:
+https://ollama.com/library/llama2-uncensored
+
+Mistral:
+https://ollama.com/library/mistral
+
+aya:
+https://ollama.com/library/aya
+
+phi3:
+https://ollama.com/library/phi3
+
+codegemma:2b-code: !!Purgado!!
+https://ollama.com/library/codegemma
+
+gemma:
+https://ollama.com/library/gemma
+
+starcoder2: !!PURGADO!!
+https://ollama.com/library/starcoder2
+
+dolphin-mixtral: !!PURGADO!!
+https://ollama.com/library/dolphin-mixtral
+
+wizardlm-uncensored: !!PURGADO!!
+https://ollama.com/library/wizardlm-uncensored
+
+wizard-vicuna-uncensored: !!PURGADO!!
+https://ollama.com/library/wizard-vicuna-uncensored
+
+dolphin-phi:
+Uncensored
+https://ollama.com/library/dolphin-phi
+
+qwen:
+https://ollama.com/library/qwen:latest
+
