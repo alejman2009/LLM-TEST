@@ -1,0 +1,37 @@
+## Preparing the dataset
+
+import os
+from tqdm import tqdm
+from concurrent.futures import ThreadPoolExecutor
+
+def process_data(data):
+    return data['text']
+
+os.chdir("G:/UNIVERSIDAD/4ºCurso/TFG/ENTORNO-ML/Datasets")
+
+from datasets import load_dataset
+dataset = load_dataset("Skylion007/openwebtext", 
+                       split="train",
+                       cache_dir="G:/UNIVERSIDAD/4ºCurso/TFG/ENTORNO-ML/Datasets/cache", 
+                       trust_remote_code=True)
+print("Done...\n")
+
+#Procesado del dataset
+
+text = ""
+
+with ThreadPoolExecutor() as executor:
+    results = list(tqdm(executor.map(process_data, dataset), total=len(dataset)))
+
+text = "".join(results)
+
+chars = sorted(list(set(text)))
+vocab_size = len(chars)
+print(chars)
+
+#Almacenamiento del dataset como un formato .pkl
+
+import pickle
+dataset_pkl_file = "LLM_Dataset_opewebtext_full.pkl"
+with open(dataset_pkl_file, 'wb') as file:
+    pickle.dump(text, file)
