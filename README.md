@@ -22,9 +22,8 @@ El proyecto aborda desde la construcción del modelo desde cero usando **PyTorch
    - [2. Generación del Vocabulario](#2-generación-del-vocabulario)
    - [3. Entrenamiento y Fine-Tuning](#3-entrenamiento-y-fine-tuning)
    - [4. Inferencia e Interacción](#4-inferencia-e-interacción)
-7. [Integración con Ollama y Docker](#-integración-con-ollama-y-docker)
-8. [Registro de Experimentos](#-registro-de-experimentos)
-9. [Licencia y Créditos](#-licencia-y-créditos)
+7. [Registro de Experimentos](#-registro-de-experimentos)
+8. [Licencia y Créditos](#-licencia-y-créditos)
 
 ---
 
